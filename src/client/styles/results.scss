@@ -1,0 +1,43 @@
+
+section.result{
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:darkblue;
+}
+.result-weather{
+    display: flex;
+    max-width: 95vw;
+    // flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+     // border-style: solid;
+
+    .result-weather-card{
+        display: flex;
+        font-size: 0.8rem;
+        width: 15%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-style: dashed;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        color: darkblue;
+        border-color: darkblue;
+    }
+}
+
+
+.result-pics{
+    display: flex;
+    max-width: 95vw;
+    // flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+    img{
+        width: 25vw;
+        min-width: 300px;
+    }
+}
