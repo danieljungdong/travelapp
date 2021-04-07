@@ -1,1 +1,48 @@
 <!DOCTYPE HTML>
+<head>
+    <title>This is a travel app</title>
+</head>
+<body>
+    <main>
+        <section class="selector">
+            <h1>Where would you like to go?</h1>
+            <form class="selector">
+                <label for="City">City:</label><br>
+                <input type="text" id="city" name="city"><br>
+                <label for="Country">Country:</label><br>
+                <input type="text" id="Country" name="Country" value="US"> <br>
+                <label for="TravelDate">Travel Date:</label><br>
+                <input type="date" id="TravelDate" name="trip-start"value=""><br>
+                <div>
+                    <input type="submit" value="Enter">	
+                    <button type="reset" value="Reset">Remove Trip </button>
+                </div>
+            </form>
+        </section>
+        <section class="result">
+            <h3><u>Upcoming weather</u></h3>
+            <div class = "result-weather"> 
+            </div>
+            <h3><u>Local Pictures</u></h3>
+            <div class = "result-pics"> </div>
+        </section>
+        <section class="previous-search">
+            <h3><u>Your previous search</u></h3>
+            <div class = "previous-search"></div>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <p>Thanks for using this app</p>
+    </footer>
+    <!-- <script src="../index.js"></script> -->
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+</body>
